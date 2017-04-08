@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_find"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.lovelyautodeal.FindActivity">
+
+    <ScrollView
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.42000002"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="8dp">
+
+            <CheckBox
+                android:text="Engine no."
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/enginenoCB"
+                android:layout_marginStart="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintRight_toLeftOf="@+id/guideline"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/enginenoET"
+                app:layout_constraintTop_toTopOf="@+id/enginenoET"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.7" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/modelET"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/regdnoET"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/soldtoET"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/purchasedfromET"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="8dp"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp" />
+
+            <CheckBox
+                android:text="Purchased from"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/purchasedfromCB"
+                android:layout_marginStart="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintRight_toLeftOf="@+id/guideline"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/purchasedfromET"
+                app:layout_constraintTop_toTopOf="@+id/purchasedfromET"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/regdnoET"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline"
+                app:layout_constraintRight_toRightOf="@+id/modelET"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/idET"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/idET"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline"
+                app:layout_constraintRight_toRightOf="@+id/modelET"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/enginenoET"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/modelET"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="8dp"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp" />
+
+            <android.support.constraint.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline"
+                app:layout_constraintGuide_begin="165dp"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteY="0dp"
+                tools:layout_editor_absoluteX="165dp" />
+
+            <CheckBox
+                android:text="Sold to"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/soldtoCB"
+                android:layout_marginStart="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintRight_toLeftOf="@+id/guideline"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/soldtoET"
+                app:layout_constraintTop_toTopOf="@+id/soldtoET"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:text="Model"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/modelCB"
+                android:layout_marginStart="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/modelET"
+                app:layout_constraintRight_toLeftOf="@+id/guideline"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintHorizontal_bias="0.66"
+                app:layout_constraintTop_toTopOf="@+id/modelET"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:text="Regd no."
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/regdnoCB"
+                android:layout_marginStart="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/regdnoET"
+                app:layout_constraintRight_toLeftOf="@+id/guideline"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintTop_toTopOf="@+id/regdnoET"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="1.0" />
+
+            <CheckBox
+                android:text="Chassis no."
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/chassisnoCB"
+                android:layout_marginStart="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintRight_toLeftOf="@+id/guideline"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/chassisnoET"
+                app:layout_constraintTop_toTopOf="@+id/chassisnoET"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/chassisnoET"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/enginenoET"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="8dp"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp" />
+
+            <CheckBox
+                android:text="Show All"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/showallCB"
+                android:layout_marginStart="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintRight_toLeftOf="@+id/guideline"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintHorizontal_bias="0.66"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/soldtoCB" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/purchasedfromET"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/chassisnoET"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="8dp"
+                app:layout_constraintLeft_toLeftOf="@+id/guideline"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp" />
+
+            <Button
+                android:text="Search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchBUT"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/showallCB"
+                android:layout_marginStart="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="16dp" />
+
+            <CheckBox
+                android:text="ID"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/idCB"
+                app:layout_constraintRight_toLeftOf="@+id/guideline"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintTop_toTopOf="@+id/idET"
+                app:layout_constraintBottom_toBottomOf="@+id/idET" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

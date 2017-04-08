@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_record_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.user.lovelyautodeal.RecordFormActivity">
+
+    <ScrollView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_width="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idTV"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|number"
+                android:ems="10"
+                android:id="@+id/idET"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:enabled="false" />
+
+            <TextView
+                android:text="Make"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/makeTV"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="14sp"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|textPersonName"
+                android:ems="10"
+                android:id="@+id/makeET"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <TextView
+                android:text="Regd no."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/regdnoTV"
+                app:layout_constraintTop_toBottomOf="@+id/makeTV"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|textPersonName"
+                android:ems="10"
+                android:id="@+id/regdnoET"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <TextView
+                android:text="Model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/modelTV"
+                app:layout_constraintTop_toBottomOf="@+id/regdnoTV"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|number"
+                android:ems="10"
+                android:id="@+id/modelET"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <TextView
+                android:text="Engine no."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/enginenoTV"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/chassisnoTV"
+                android:layout_margin="0dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|textPersonName"
+                android:ems="10"
+                android:id="@+id/enginenoET"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <TextView
+                android:text="Chassis no."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chassisnoTV"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/modelTV"
+                android:layout_margin="0dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|textPersonName"
+                android:ems="10"
+                android:id="@+id/chassisnoET"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <TextView
+                android:text="Purchased from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/purchasedfromTV"
+                app:layout_constraintTop_toBottomOf="@+id/enginenoTV"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|textPersonName"
+                android:ems="10"
+                android:id="@+id/purchasedfromET"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <TextView
+                android:text="Purchaser address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/purchaseraddressTV"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|textPersonName"
+                android:ems="10"
+                android:id="@+id/purchaseraddressET"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <TextView
+                android:text="Purchaser phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/purchaserphoneTV"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|phone"
+                android:ems="10"
+                android:id="@+id/purchaserphoneET"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <TextView
+                android:text="Purchase date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/purchasedateTV"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|date"
+                android:ems="10"
+                android:id="@+id/purchasedateET"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp"
+                android:focusable="false" />
+
+            <TextView
+                android:text="Sold to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/soldtoTV"
+                app:layout_constraintTop_toBottomOf="@+id/purchasedfromTV"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|textPersonName"
+                android:ems="10"
+                android:id="@+id/soldtoET"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <TextView
+                android:text="Seller address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/selleraddressTV"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|textPersonName"
+                android:ems="10"
+                android:id="@+id/selleraddressET"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <TextView
+                android:text="Seller phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sellerphoneTV"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|phone"
+                android:ems="10"
+                android:id="@+id/sellerphoneET"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <TextView
+                android:text="Selling date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sellingdateTV"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|date"
+                android:ems="10"
+                android:id="@+id/sellingdateET"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp"
+                android:focusable="false" />
+
+            <TextView
+                android:text="Extra information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/extrainformationTV"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/extrainformationET"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <TextView
+                android:text="Last updated"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lastupdatedTV"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|textPersonName"
+                android:ems="10"
+                android:id="@+id/lastupdatedET"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <Button
+                android:text="Save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/saveBUT"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <Button
+                android:text="update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/updateBUT"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <Button
+                android:text="delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/deleteBUT"
+                android:layout_marginLeft="0dp"
+                android:layout_margin="0dp" />
+
+            <Button
+                android:text="cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancelBUT" />
+
+            <Button
+                android:text="Clear fields"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/clearfieldsBUT" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
